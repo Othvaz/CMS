@@ -19,8 +19,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    @Vite(['resources/css/app.css',
-        'resources/js/app.js',
+    @vite(['resources/css/app.css',
         'resources/css/sb-admin-2.css',
         ])
 
