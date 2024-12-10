@@ -4,6 +4,11 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/css/sb-admin-2.css": {
+    "file": "assets/sb-admin-2-BJVPoplu.css",
+    "src": "resources/css/sb-admin-2.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
