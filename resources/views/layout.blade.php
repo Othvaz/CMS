@@ -6,7 +6,6 @@
         <title>Document</title>
         @Vite(['resources/css/app.css',
         'resources/js/app.js',
-        'resources/css/sb-admin-2.css',
         'resources/css/sb-admin-2.min.css',
         ])
 
