@@ -46,7 +46,7 @@ class MarkerController extends Controller
             'video_id' => $validated['video_id'],
             'status' => 0,
         ]);
-        return redirect()->to('markers');
+        return redirect()->route('markers');
     }
     // public function status_change($markerId){
     //     $marker = Marker::find($markerId);

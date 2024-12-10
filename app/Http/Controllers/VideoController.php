@@ -28,18 +28,18 @@ class VideoController extends Controller
             'name'=> $request->name,
             'path'=> $path
         ]);
-        return redirect()->to('videos')->with('status','videos has been uploaded');
+        return redirect()->route('videos')->with('status','videos has been uploaded');
     }
 
     public function delete_video($videoId){
         $video = Video::find($videoId);
         $video->delete();
-        return redirect()->to('videos')->with('status','videos has been deleted');
+        return redirect()->route('videos')->with('status','videos has been deleted');
     }
 
     public function delete_all(){
         Video::where('id','!=',null)->delete();
-        return redirect()->to('videos')->with('status','all vids deleted');
+        return redirect()->route('videos')->with('status','all vids deleted');
     }
 
     public function video_update($videoId){
@@ -57,7 +57,7 @@ class VideoController extends Controller
         if(isset($path))
             $update_data['path'] = $path;
         Video::find($videoId)->update($update_data);
-        return redirect()->to('videos')->with('status','videos has been updated');
+        return redirect()->route('videos')->with('status','videos has been updated');
     }
     
     public function test(){

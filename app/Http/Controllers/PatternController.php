@@ -51,11 +51,11 @@ class PatternController extends Controller
             'path'=> $patternPath,
             'image'=> $imagePath
         ]);
-        return redirect()->to('patterns')->with('status', 'pattern has been uploaded');
+        return redirect()->route('patterns')->with('status', 'pattern has been uploaded');
     }
     public function delete_pattern($patternId){
         $pattern = Pattern::find($patternId);
         $pattern->delete();
-        return redirect()->to('patterns');
+        return redirect()->route('patterns');
     }
 }
