@@ -18,8 +18,7 @@
 
     </head>
     <body>
-        < class="container-fluid">
-
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <!-- Illustrations -->
