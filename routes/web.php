@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class,'index'])->name('dashboard');
 Route::get('/login', [AuthController::class,'index'])->name('login');
+Route::get('/logout', [AuthController::class,'logout'])->name('logout');
 Route::post('/login', [AuthController::class,'login_function']);
 
 
