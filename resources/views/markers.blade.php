@@ -83,7 +83,7 @@
                             <form action="{{route('marker.update', ['id'=>$m->id])}}" method="post">
                                 @csrf
                                 <input type="hidden" name="status_change">
-                                <button type="submit" class="btn btn-primary">Change Status</button>
+                                <button type="submit" class="ml-2 btn btn-primary">Change Status</button>
                             </form>
                         </div>
                         </div>
