@@ -18,7 +18,7 @@
 
     </head>
     <body>
-        <div class="container-fluid">
+        < class="container-fluid">
 
             <div class="row">
                 <div class="col-lg-6 mb-4">
@@ -70,13 +70,6 @@
                 </div>
             </div>
         </div>
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Can Ngopi 2024</span>
-                </div>
-            </div>
-        </footer>
                 <!-- End of Footer -->
 
             
