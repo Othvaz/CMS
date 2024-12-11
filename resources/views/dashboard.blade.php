@@ -180,7 +180,7 @@
 
                     markerTimeouts[marker.id] = setTimeout(() => {
                         loadingTaskCompletion();
-                    }, 3000);
+                    }, video.duration * 1000);
                 }
             });
 
