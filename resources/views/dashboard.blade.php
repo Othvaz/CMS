@@ -66,7 +66,7 @@
                 <img id="popupImage" src="{{asset('storage/' . $m->pattern->image)}}" alt="Find Me Image">
             @endif
         @endforeach
-        <h2>Find Me!</h2>
+        <h2 id="popupText">Find Me!</h2>
         <button id="closePopup">Close</button>
     </div>
 
@@ -125,7 +125,9 @@
         function loadingTaskCompletion() {
             currentCount++;
             if (currentCount >= 5) {
+                finalOutput();
                 sessionStorage.setItem('task1Complete', 'true');
+                
             } else {
                 boolBox.innerHTML = `Currently doing Task 1, Part ${currentCount + 1}`;
                 updateOutput(pictureList[currentCount]);
@@ -137,6 +139,11 @@
             popup.style.display = 'block';
         }
 
+        function finalOutput(){
+            popup.style.display = 'block';
+            const popupText = document.getElementById("popupText");
+            popupText.textContent = "Good job!!!"
+        }
         closePopup.addEventListener('click', function () {
             popup.style.display = 'none';
         });
