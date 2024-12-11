@@ -117,7 +117,7 @@
         // let pictureList = ["FramePics/Frame1.jpg", "FramePics/Frame2.jpg", "FramePics/Frame3.jpg", "FramePics/Hiro.png", "FramePics/Kanji.png"];
         let pictureList = [];
         @foreach ($markers as $m)
-            pictureList.push("{{$m->pattern->image}}");
+            pictureList.push("{{asset('storage/' . $m->pattern->image)}}");
         @endforeach
         let currentCount = 0;
         let markerTimeouts = {};
